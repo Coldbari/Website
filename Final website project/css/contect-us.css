@@ -1,0 +1,134 @@
+.contact-us{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.contact-us-container{
+    width: 100wh;
+    margin: 30px 150px;
+    height: 500px;
+    border: 1px solid black;
+    /* background-color: aquamarine; */
+    display: flex;
+    overflow: hidden;
+}
+
+.our-info{
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 20px 20px;
+}
+
+.our-info p{
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.our-info span{
+    color: yellow;
+}
+
+.our-info h3{
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.media-icon i{
+    margin-right: 10px;
+}
+
+
+.number h5 , .telling h5 {
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px
+}
+
+.big-cricle{
+    position: absolute;
+    right: -130px;
+    bottom: -130px;
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.small-cricle{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    opacity: 0.8;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(34, 184, 96);
+    border-radius: 50%;
+}
+
+
+.user-info{
+    width: 80%;
+    height: 100%;
+    padding: 30px 50px;
+    overflow: hidden;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group{
+   width: 400px;
+   margin-right: 5px;
+}
+
+.form-group label{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+}
+
+.form-group input{
+    border: 0.5px soild gray;
+    outline: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.form-group select{
+    border: 1px soild gray;
+    outline: none;
+    margin-top: 10px;
+    color: gray;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-group{
+    margin-bottom: 10px;
+}
+
+.submit-btn{
+    margin-top: 10px;
+    padding: 5px 30px;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    color:  white;
+}
+
+.submit-btn:hover{
+    background-color: rgb(56, 59,89);
+}
+

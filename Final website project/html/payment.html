@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/payment.css">
+    <title>Stusu - Payment</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="payment-container">
+            <div class="product-info">
+                <div class="informantion">
+                    <div class="logo">
+                        <img src="/assets/Logo.svg" alt="logo" id="informantion-logo">
+                    </div>
+                    <div class="titles">
+                        <h3>Contact informantion</h3>
+                    </div>
+                    <div class="filling-info">
+                        <div class="email">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="checkbox" name="" id="checkbox">Enable email notifications
+                        </div>
+                        <br>
+                        <div class="shipping">
+                            <h3>Shipping Address</h3>
+                            <div class="first-last-name">
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                            </div>
+                            <input type="text" name="" id="company" placeholder="Company (optional)">
+                            <input type="text" name="address" id="address" placeholder="Address" required>
+                            <input type="text" name="address2" id="address2"
+                                placeholder="Apartment, suite,etc (optional)">
+                            <input type="text" name="city" id="city" placeholder="City" required>
+                            <div class="country-state">
+                                <input type="text" name="country" id="country" placeholder="Country/Region" required>
+                                <input type="text" name="state" id="state" placeholder="State" required>
+                                <input type="number" name="zip" id="zip" placeholder="Zip" required>
+                            </div>
+                            <input type="number" name="phone" id="phone" placeholder="Phone" required>
+                            <input type="checkbox" name="" id="checkbox">Text me with news and offers
+                        </div>
+                    </div>
+                    <div class="processed">
+                        <a href="/html/checkout.html"><i class="fa-solid fa-arrow-left"></i> Return to cart</a>
+                        <button onclick="nextpage()">Continue to shipping</button>
+                    </div>
+                    <hr>
+                    <div class="linkes">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Refund Policy</a>
+                        <a href="#">Shipping Policy</a>
+                    </div>
+                </div>
+                <div class="product-information">
+                    <div id="product-div">
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <div class="total-subtotal">
+                            <p>Subtotal :</p>
+                            <p id="subtotal">Rs : </p>
+                        </div>
+                        <div class="total-subtotal">
+                            <p>Discount :</p>
+                            <p id="discount">Rs : </p>
+                        </div>
+                        <div class="total-shipping">
+                            <p>Shipping :</p>
+                            <p id="shipping">Rs : </p>
+                        </div>
+                        <hr>
+                        <div class="total-price">
+                            <p>Total :</p>
+                            <p id="total">Rs : </p>
+                        </div>
+                    </div>
+                    <div class="card-payment">
+                        <div class="payment-method">
+                            <h3>Select the <span>
+                                    payment
+                                </span>Method</h3>
+                            <div class="card-info">
+                                <div class="card" id="card">
+                                    <div class="card-box visa" onclick="changepayment()">
+                                        <img src="/assets/visa.png" alt="" class="card-icon">
+                                        <h3>VISA</h3>
+                                    </div>
+                                    <div class="card-box mastercard" onclick="changepayment()">
+                                        <img src="/assets/icons8-mastercard-48.png" alt="" class="card-icon">
+                                        <h3>Mastercard</h3>
+                                    </div>
+                                    <div class="card-box paypal" onclick="changepayment()">
+                                        <img src="/assets/icons8-paypal-96.png" alt="" class="card-icon">
+                                        <h3>Paypal</h3>
+                                    </div>
+                                    <div class="card-box amex" onclick="changepayment()">
+                                        <img src="/assets/amex.png" alt="" class="card-icon">
+                                        <h3>AMEX</h3>
+                                    </div>
+                                    <div class="card-box gpay" onclick="paymentbygpay()">
+                                        <img src="/assets/google-pay.png" alt="" class="card-icon">
+                                        <h3>Google Pay</h3>
+                                    </div>
+                                </div>
+                                <div class="info" id="info">
+                                    <div class="back">
+                                        <i class="fa-solid fa-arrow-left" onclick="backchange()"></i>
+                                        <h4>Enter your card details</h4>
+                                    </div>
+                                    <br>
+                                    <h5>Cardholder Name</h5>
+                                    <input type="text" placeholder="Ente your name">
+                                    <br>
+                                    <h5>Card Number</h5>
+                                    <input type="text" id="card-number" maxlength="19"
+                                        placeholder="1234 5678 9012 3456">
+                                    <br>
+                                    <div class="date-cvv">
+                                        <div class="date">
+                                            <h5>Expiration Date</h5>
+                                            <input type="date" placeholder="04/2026">
+                                        </div>
+                                        <div class="cvv">
+                                            <h5>CVV</h5>
+                                            <input type="password" placeholder="***" maxlength="3" id="pin-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-payment-gpay" id="card-payment-gpay">
+                                    <div class="back">
+                                        <i class="fa-solid fa-arrow-left" onclick="backchange()"></i>
+                                        <h4>Enter your card details</h4>
+                                    </div>
+                                    <br>
+                                    <h5>Enter your UPI id</h5>
+                                    <input type="text" id="upi-id" name="upi-id" placeholder="abc@upi">
+                                    <h5 id="name-user"></h5>
+                                    <button class="verify" onclick="verify()">Verify</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/payment.js"></script>
+
+
+
+</html>

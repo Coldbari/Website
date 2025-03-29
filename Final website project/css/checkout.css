@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.checkout-container {
+    height: 100vh;
+    padding: 50px 10%;
+    background-color: blueviolet;
+    user-select: none;
+}
+
+.checkout-section {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-color: white;
+}
+
+.product-sec {
+    width: 70%;
+    padding: 0 60px;
+}
+
+#heading-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.total-sec {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.product-sec-header,
+.total-sec-header {
+    padding: 50px 20px 10px 20px;
+}
+
+
+.total-sec-contain {
+    padding: 20px 20px;
+}
+
+.item-total {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input h5,
+select,
+input {
+    margin-bottom: 15px;
+}
+
+select,
+input {
+    width: 100%;
+    padding-left: 15px;
+    color: rgb(44, 44, 44);
+    border: none;
+    height: 30px;
+    outline: none;
+}
+
+.code-apply {
+    padding: 4px 15px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    margin-bottom: 15px;
+}
+
+.code-apply:hover {
+    cursor: pointer;
+    background-color: rgb(78, 24, 129);
+    transition: 0.2s ease-in;
+}
+
+.total-shopping {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.subtotal,
+.shipping-cost,
+.totalcost,
+.promocode {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+
+.checkout {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+}
+
+
+.checkout:hover {
+    cursor: pointer;
+    background-color: rgb(78, 24, 129);
+    transition: 0.2s ease-in;
+}
+
+#continue-shop {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    text-decoration: none;
+}
+
+#sub-total-price,
+.sub-total,
+#shipping-cost-price,
+#total-cost-price,
+#promo-code-price,
+#checkout-total {
+    width: 120px;
+    text-align: start;
+}
+
+.table-row {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-row .product-details{
+    width: 250px;
+    margin-right: 20px;
+}
+
+.table-row .Quantity {
+    margin: 0 15px;
+}
+
+.table-row-price{
+    width: 100px;
+    text-align: center;
+    margin-left: 38px;
+    margin-right: 5px;
+}
+
+.table-row .Total{
+    width: 100px;
+    text-align: center;
+}
+
+
+
+.shopping-cart-item, .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 2;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.product-name{
+    width: 150px;
+    height: auto;
+}
+
+
+.quantity-control {
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+    align-items: center;
+
+}
+
+.quantity-control button {
+    padding: 5px 10px;
+    background: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-control button:hover {
+    background: rgb(78, 24, 129);
+}
+
+.quantity-control span {
+    font-size: 16px;
+    text-align: center;
+    max-width: 40px;
+    min-width: 40px;
+}
+
+.price, .total {
+    min-width: 100px;
+    max-width: 100px;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+.price{
+    margin-left: 25px ;
+}
+
+.remove-btn {
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+#checkout-list{
+    width: 100%;
+    height: 350px;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}

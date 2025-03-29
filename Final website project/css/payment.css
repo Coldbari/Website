@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container {
+    padding: 50px 150px;
+}
+
+.payment-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+}
+
+.informantion {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 20px 40px 20px 40px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#informantion-logo {
+    width: 250px;
+    border: none;
+    height: auto;
+}
+
+.titles {
+    margin: 10px 0;
+}
+
+.filling-info #email {
+    width: 100%;
+    padding: 10px;
+}
+
+#checkbox {
+    margin: 10px 10px 10px 0;
+}
+
+.shipping h3 {
+    margin-bottom: 20px;
+}
+
+.shipping #checkbox {
+    margin-bottom: 20px;
+}
+
+.first-last-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-last-name input {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#company,
+#address,
+#address2,
+#city {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.country-state {
+    width: 100%;
+    height: fit-content;
+}
+
+#state,
+#zip,
+#country {
+    width: 32.8%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#phone {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.processed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.processed a {
+    padding: 0px 0 20px 0;
+}
+
+.processed button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.processed button:hover {
+    background-color: rgb(56, 59, 89);
+}
+
+
+.linkes {
+    margin: 10px 0;
+}
+
+.linkes a {
+    text-decoration: none;
+    color: blueviolet;
+    margin-right: 10px;
+}
+
+.linkes a:hover {
+    color: rgb(56, 59, 89);
+}
+
+.product-information {
+    width: 50%;
+    padding: 20px 40px 20px 40px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid black;
+}
+
+.total {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.total-subtotal,
+.total-shipping {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.total-price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#product-div {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+
+.checkout-item {
+    position: relative;
+    display: flex;
+    background: #fff;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.product-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+
+.product-name h6 {
+    width: 200px;
+    height: 100%;
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+.price {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    min-width: 80px;
+}
+
+.card-payment {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.payment-method {
+    width: 100%;
+    height: fit-content;
+}
+
+.payment-method h3 {
+    padding: 0px 0 20px 0;
+}
+
+.payment-method h3 span {
+    color: blueviolet;
+}
+
+.card-info {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-info .card {
+    display: flex;
+    border: 1px soild black;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.card .card-box {
+    user-select: none;
+    cursor: pointer;
+    margin: 0px 0;
+    width: 256px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 10px 5px 20px;
+    align-items: center;
+}
+
+.card .card-box h3 {
+    padding: 20px 0;
+}
+
+.card-box .card-icon {
+    border: none;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.card .card-box:hover {
+    border: 2px solid blueviolet;
+}
+
+
+.info {
+    position: relative;
+    display: none;
+    user-select: none;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fa-arrow-left {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.info input {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.info input:focus {
+    border: 1px solid black;
+}
+
+.date-cvv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-payment-gpay {
+    display: none;
+    user-select: none;
+}
+
+.card-payment-gpay input {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.card-payment-gpay input:focus {
+    border: 1px solid black;
+}
+
+
+.card-payment-gpay h5 {
+    margin-bottom: 10px;
+}
+
+.card-payment-gpay .verify {
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card-payment-gpay .verify:hover {
+    background-color: rgb(56, 59, 89);
+}
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>Stusu - Checkout</title>
+</head>
+
+<body>
+    <div class="checkout-container">
+        <div class="checkout-section">
+            <div class="product-sec">
+                <div class="product-sec-header">
+                    <span id="heading-text">Shopping Cart</span>
+                    <hr>
+                </div>
+
+                <div class="shopping-cart">
+                    <div class="cart-header table-row">
+                        <h6 class="product-details">Product Details</h6>
+                        <h6 class="Quantity">Quantity</h6>
+                        <h6 class="table-row-price">Price</h6>
+                        <h6 class="Total">Total</h6>
+                    </div>
+                    <div id="checkout-list" class="product-list"></div>
+                </div>
+
+                <a href="/html/index.html" id="continue-shop"><i class="fa-solid fa-arrow-left"></i> Continue
+                    Shopping</a>
+
+            </div>
+            <div class="total-sec">
+                <div class="total-sec-header">
+                    <span id="heading-text">Order Summary</span>
+                    <hr>
+                </div>
+                <div class="total-sec-contain">
+                    <div class="item-total">
+                        <span id="total-item-cart"></span>
+                        <span id="checkout-total">Rs : 0</span>
+                    </div>
+                    <div class="input">
+                        <h5 for="selected-value">Shipping</h5>
+                        <select id="selected-value" onchange="shippingCost()">
+                            <option value="0">Select Delivery Type</option>
+                            <option value="200">Standard Delivery - Rs 200</option>
+                            <option value="800">International Delivery - Rs 800</option>
+                        </select>
+
+                        <h5>Promo Code</h5>
+                        <input type="text" placeholder="Enter this code #get10 or 20" id="promo-code-input">
+                        <br>
+                        <button class="code-apply" onclick="applycode()">Apply</button>
+                    </div>
+                    <hr>
+                    <div class="total-shopping">
+                        <div class="subtotal">
+                            <span>Sub Total :</span>
+                            <span class="sub-total" id="checkout-total">Rs : 0</span>
+                        </div>
+                        <div class="promocode">
+                            <span>Promo Code :</span>
+                            <span id="promo-code-price">Rs : 0</span>
+                        </div>
+
+                        <div class="shipping-cost">
+                            <span>Shipping Cost :</span>
+                            <span id="shipping-cost-price">Rs : 0</span>
+                        </div>
+                        <hr>
+                        <div class="totalcost">
+                            <span>Total Cost :</span>
+                            <span id="total-cost-price">Rs : 0</span>
+                        </div>
+                    </div>
+                   <button class="checkout"  onclick="payment()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/checkout.js"></script>
+<script>
+    function payment(){
+        window.location.href = "/html/payment.html";
+    }
+</script>
+</html>

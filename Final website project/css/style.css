@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body{
+    overflow: scroll;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+}
+
+#navbar {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.hero {
+    user-select: none;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 20px 100px;
+    background-color: blueviolet;
+    color: white;
+    background-color: rgb(56, 59, 89);
+}
+
+.hero-content h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(56, 59, 89);
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product {
+    position: relative;
+    padding: 20px 1%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+}
+
+.product h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product a {
+    padding: 5px 20px;
+    position: absolute;
+    right: 80px;
+    top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.product a i {
+    margin-left: 5px;
+}
+
+
+.product a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s ease-in;
+}
+
+
+.all-product-container-boxer {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;    
+    scrollbar-width: none;
+    padding: 10px 30px;
+}
+
+
+.all-product-container-boxer .box {
+    padding: 10px;
+    min-width: 225px;
+    max-width: 225px;
+    height: fit-content;
+    background-color: whitesmoke;
+}
+
+#features {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+
+.subscrible {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+.subscrible h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subscrible p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.subscrible-form {
+    padding: 10px 0;
+}
+
+.subscrible-form input {
+    padding: 10px 20px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+}
+
+.subscrible-form button {
+    padding: 10px 50px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.subscrible-form button:hover {
+    background-color: rgb(78, 24, 129);
+    transition: 0.2s ease-in;
+}
+
+
+#footer {
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+}

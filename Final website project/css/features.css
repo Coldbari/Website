@@ -1,0 +1,69 @@
+section{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    user-select: none;
+}
+
+section .box{
+    width: 240px;
+    max-height: 320px;
+    min-height: 320px;
+    text-align: center;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.157);
+    padding: 20px 20px;
+    background-color: white;
+}
+
+section .second:hover , .four:hover{
+    transform: translateY(-20px);
+    transition: 0.5s ease-out;
+}
+
+section .box img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+}
+
+section .box h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section .box p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section .box a{
+    color: black;
+    margin-top: 10px;
+    padding: 5px;
+    text-underline-offset: 10px;
+}
+
+section .box a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+}
+
+.first , .third{
+   transform: translateY(100px);
+}
+
+section .first:hover , .third:hover{
+    transform: translateY(80px);
+    transition: 0.5s ease-out;
+}

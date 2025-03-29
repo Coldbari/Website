@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+.confirmed-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.confirmed-box {
+    user-select: none;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: fit-content;
+    background-color: white;
+}
+
+.confirmed-box iframe {
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+.order-message , .order-Status{
+    margin-bottom: 20px;
+}
+
+.order-phone-meassage p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+ 
+button {
+    cursor : pointer;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    width: 150px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: blueviolet;
+    
+}
+ 
+button:hover{
+    border: none;
+    background-color: rgb(56, 59, 89);
+}
+
+
+.see-details{
+    padding: 20px 0;
+    display: none;
+    width: 100%;
+    height: fit-content;
+    text-align: start;
+    margin-top: 20px;
+}

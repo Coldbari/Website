@@ -1,0 +1,231 @@
+.all-product-container {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 40px;
+}
+
+.all-product-box {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+}
+
+.filter-container {
+    background: whitesmoke;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.color-options {
+    display: flex;
+    gap: 8px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color.red {
+    background: #c94c4c;
+}
+
+.color.orange {
+    background: #e67e22;
+}
+
+.color.blue {
+    background: #3498db;
+}
+
+.color.pink {
+    background: #ff66b2;
+}
+
+.color.cyan {
+    background: #1abc9c;
+}
+
+.color.active {
+    border: 2px solid black;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: blue;
+}
+
+
+
+.all-product-section {
+    width: 90%;
+}
+
+
+.all-product-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+
+.all-product-heading span {
+    font-size: 15px;
+    color: gray;
+}
+
+.all-product-heading .sort {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sort .Short-by {
+    padding: 2px;
+}
+
+
+.all-product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+
+.all-product .box {
+    padding: 10px;
+    width: 225px;
+    height: fit-content;
+    background-color: whitesmoke;
+}
+
+.box .image-box {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.box .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-text {
+    padding: 10px 5px 0px;
+}
+
+.rating-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 5px;
+}
+
+.rating-box h3 {
+    color: #ffae00;
+}
+
+.rating-box span {
+    font-size: 10px;
+    margin-top: -5px;
+}
+
+.box .price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box .price-box span i {
+    font-size: 15px;
+}
+
+.box .price-box .cut {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.box .price-box .cut i {
+    font-size: 13px;
+}
+
+.box-addtocart-btn {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 0;
+}
+
+.box-addtocart-btn .fa-cart-shopping {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: -2px;
+    border: none;
+}
+
+.box-addtocart-btn:hover {
+    background-color: rgb(56, 59, 89);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

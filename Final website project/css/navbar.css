@@ -1,0 +1,145 @@
+header {
+    width: 100%;
+    height: 110px;
+    justify-items: center;
+    background-color: rgba(127, 12, 235, 1);
+}
+
+.navbar {
+    width: 80%;
+    height: 100%;
+}
+
+.upper-navbar {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.Search {
+    border-radius: 3px;
+    width: 400px;
+    overflow: hidden;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.Search input {
+    padding: 5px 10px;
+    outline: none;
+    width: 91%;
+    height: 40px;
+    border: none;
+}
+
+.Search button {
+    width: 9%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.Search button img {
+    width: 30px;
+}
+
+.Account {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Account p {
+    color: black;
+}
+
+.Account button {
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.lower-navbar {
+    width: 100%;
+    height: 40%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-navbar nav ul {
+    display: flex;
+    margin-right: 5px;
+}
+
+.lower-navbar nav ul li {
+    user-select: none;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 0 5px;
+    text-underline-offset: 5px;
+}
+
+.lower-navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.lower-navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.loaction-in-navbar {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.login:hover {
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+.fa-user,
+.fa-cart-shopping {
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.dropdown-content {
+    width: 0;
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5%;
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+#lower-navbar-product {
+    position: relative; /* Ensure positioning */
+}
+
+#lower-navbar-product:hover .dropdown-content {
+    display: block; /* Ensure visibility */
+}

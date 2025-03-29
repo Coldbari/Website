@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/order-confirmed.css">
+    <link rel="stylesheet" href="https://lottie.host/42522779-56e9-409e-8f0a-927e6ffde27a/bs3W7piTfi.lottie">
+    <title>Stusu - Order Confirmed</title>
+</head>
+
+<body>
+    <div class="confirmed-container">
+        <div class="confirmed-box">
+            <iframe src="https://lottie.host/embed/42522779-56e9-409e-8f0a-927e6ffde27a/bs3W7piTfi.lottie"></iframe>
+
+            <br>
+            <div class="order-message">
+                <h2>Order Confirmed! 🎉</h2>
+                <p>Thank you for your purchase! Your order has been successfully placed.</p>
+            </div>
+            <hr>
+            <br>
+            <div class="order-Status">
+                <h4>📦 Order Number : 2332521</h4>
+                <h4>📅 Estimated Delivery : 5 - 7 Working Days</h4>
+            </div>
+            <hr>
+            <br>
+            <div class="order-phone-meassage">
+                <p><i>You will receive a confirmation email/SMS with tracking details once your order is shipped.</i>
+                </p>
+                <p><b>If you have any questions, feel free to contact our support team.</b></p>
+                <h3>Happy Shopping! 😊</h3>
+            </div>
+            <div class="button" id="btnnn">
+                <button id="see-details" onclick="seemore()">See Details</button>
+                <button class="print" onclick="printpage()">Print</button>
+            </div>
+
+
+            <div class="see-details" id="seedetails">
+                <h3>Order Details :</h3>
+                <h5 id="name"></h5>
+                <h5 id="address"></h5>
+                <h5 id="phone"></h5>
+                <h5 id="total"></h5>
+                <h5 id="total-words"></h5>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function seemore() {
+
+        let totalget = JSON.parse(localStorage.getItem("total-price-payment"));
+
+        let totalstore = totalget.total;
+
+        // Retrieve data from localStorage
+        document.getElementById("name").innerText = (localStorage.getItem("name") || "Not Available");
+        document.getElementById("address").innerText = (localStorage.getItem("address") || "Not Available");
+        document.getElementById("phone").innerText = (localStorage.getItem("phone") || "Not Available");
+        document.getElementById("total").innerText = totalstore;
+        document.getElementById("total-words").innerText = "Total in Words: " + (localStorage.getItem("totalWords") || "Not Available");
+
+
+        let see_details = document.getElementById("seedetails");
+        if (see_details.style.display === "block") {
+            see_details.style.display = "none";
+        } else {
+            see_details.style.display = "block";
+        }
+    }
+
+    function printpage() {
+        window.print();
+    }
+</script>
+
+</html>
